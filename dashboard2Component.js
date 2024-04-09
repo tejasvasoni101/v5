@@ -6,7 +6,7 @@ function fetchDataAndUpdateTable() {
     $("#updateTime").text("Fetching Data from backend...");
   
     // Fetch data from API
-    $.get("https://stocktrafficcontrol.online/findStock?all=1&days=1", function(data) {
+    $.get("https://stocktrafficcontrol.online/findStock?all=1&days=7", function(data) {
       const timestamp = new Date().toLocaleString();
       // Store data in local storage with timestamp
       const trueData = JSON.parse(data).extras;
